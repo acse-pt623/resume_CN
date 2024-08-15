@@ -1,0 +1,94 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage[hidelinks]{hyperref}
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{谭沛烽}
+
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+\contactInfo{(+86) 178-0123-1696}{tanxionji.1999@gmail.com}{pt623@ic.ac.uk}{GitHub @acse-pt623}
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+ 
+\section{个人总结}
+本人在校成绩优秀、乐观向上，工作负责、自我驱动力强、热爱尝试新事物，认同人工智能将在未来彻底改变生产力和生产方式。对数学有浓厚的兴趣。积极寻找机器学习可以作用于市场的可行性。
+
+% \section{\faGraduationCap\ 教育背景}
+\section{教育背景}
+\datedsubsection{\textbf{Imperial College London},应用计算科学与工程,\textit{在读硕士研究生}}{2023.9 - 2024.9}
+\ \textbf{核心课程:},机器学习，反演和优化，应用计算科学，数值方法，并行编程模式，动态过程建模，数值方法
+\datedsubsection{\textbf{中国石油大学（北京）},自动化,\textit{工学学士}}{2017.9 - 2021.6}
+\ \textbf{GPA:88.01 /100(前5\%)},学业优秀奖学金(一等), 中国物探局企业奖学金 2018, 年优秀学生(连续两年)
+
+% \section{\faCogs\ IT 技能}
+\section{技术能力}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  \item \textbf{编程语言}: Python, C++, OpenMp, MPI, Matlab, C, Shell
+  \item \textbf{操作系统,数据库与工程构建}: Linux/macOS/MySQL/MongoDB
+\end{itemize}
+
+% \end{itemize}
+
+\section{实习经历/项目经历}
+\datedsubsection{\textbf{AIP 公司-伦敦}, 机器学习商品价格预测}{2024.6-至今}
+\begin{itemize}
+  \item Geonatiq LTD-商品价格预测：使用机器学习和 NLP 情感分析来预测商品价格。
+  \item 优化模型实现盈利。
+\end{itemize}
+
+\datedsubsection{\textbf{通过深度学习预测热带气旋行为},小组任务}{01/2024}
+\begin{itemize}
+  \item 使用 pytorch 搭建深度学习模型，根据过去时间点上的风暴数据和卫星图像数据预测之后连续三个时刻的风暴图像以及最后多个连续时刻的风暴速度
+  \item 本人主要负责搭建 CNN-ConvLSTM 模型，将前十个时刻的时间标签，海洋标签，风暴图片作为输入，预测最后一个时刻的风暴速度
+  \item GitHub: \href{https://github.com/ese-msc-2023/acds-the-day-after-tomorrow-yolanda.git}{https://github.com/ese-msc-2023/acds-the-day-after-tomorrow-yolanda.git}
+\end{itemize}
+
+\datedsubsection{\textbf{Gerardium Rush 优化项目},小组项目}{05/2024}
+\begin{itemize}
+  \item 使用 C++和遗传算法开发了一种矿物加工回路的优化工具。通过 OpenMP和 MPI 实现并行处理，提高了计算效率。
+  \item 主要成就：在 C++中实现了核心模拟和遗传算法。利用 OpenMP 和MPI 加速模拟，改善了性能和可扩展性。
+  \item GitHub: \href{ https://github.com/ese-msc-2023/acs-gerardium-rush-pentlandite}{ https://github.com/ese-msc-2023/acs-gerardium-rush-pentlandite}
+\end{itemize}
+
+\datedsubsection{\textbf{X 光手指图片生成和辨别},个人项目}{01/2024}
+\begin{itemize}
+  \item 第一部分训练 GAN 或者 VAE 生成模型生成X 光下人手图片
+  \item GitHub: \href{ https://github.com/ese-msc-2023/dlmodule-coursework-1-acse-pt623.git}{ https://github.com/ese-msc-2023/dlmodule-coursework-1-acse-pt623.git}
+  \item 第二部分训练 ResNet34 模型分辨真实图片，GAN，VAE 生成图片
+  \item GitHub: \href{ https://github.com/ese-msc-2023/dlmodule-coursework-2-acse-pt623.git}{ https://github.com/ese-msc-2023/dlmodule-coursework-2-acse-pt623.git}
+\end{itemize}
+
+\datedsubsection{\textbf{自监督学习研究 },本科毕业设计}{02/2021}
+\begin{itemize}
+  \item 阅读相关英文文献并分析几种典型的基于CNN的自监督学习模型AlexNet,Codec 和 NIN 卷积模型
+  \item 还原了两个机器学习的自监督实验，证明了其在不同下游任务上与其他方法相比的优越性和不足
+\end{itemize}
+
+% \datedsubsection{\textbf{数据科学与大数据分析-理论与实践在线项目 ｜ 导师：Mark Vogelsberger ，麻省理工学院}}{08/2020-09/2020}
+% \begin{itemize}
+%   \item 学习数据检索技术，使用爬虫从万维网和大型数据库（重点关注MongoDB）中提取数据。专注于机器学习及TensorFlow和Keras编程任务，探索Python、R和Julia等开发环境。
+%   \item 实施基于人工智能的医生应用程序，可以通过 NLP 与患者互动，并通过基于 CNN 的图像分析检测癌症
+%   \item 完成最终项目并发表论文： Tianci Xu, Liming Liu, Peifeng Tan , “A Cancer Diagnose System using Deep Learning”, 2021 Asia-Pacific Conference on Image
+%   Processing, Electronics and Computers (IPEC 2021), Nov.2020, Accepted
+% \end{itemize}
+
+\datedsubsection{\textbf{数据科学与大数据分析-理论与实践在线项目 ｜ 导师：Mark Vogelsberger ，麻省理工学院}}{08/2020-09/2020}
+\begin{itemize}
+  \item 学习数据检索技术，使用爬虫从万维网和大型数据库（重点关注MongoDB）中提取数据。专注于机器学习及TensorFlow和Keras编程任务，探索Python、R和Julia等开发环境。
+  \item 开发基于AI的医生应用，通过NLP与患者互动，并通过CNN图像分析检测癌症。
+  \item 完成最终项目并发表论文： Tianci Xu, Liming Liu, Peifeng Tan , “A Cancer Diagnose System using Deep Learning”, 2021 Asia-Pacific Conference on Image
+\end{itemize}
+
+\end{document}
